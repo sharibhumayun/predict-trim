@@ -6,6 +6,5 @@ pandas==1.4.2
 pickle-mixin==1.0.2
 scikit-learn==1.0.2
 sklearn==0.0
-spyder @ file:///C:/ci/spyder_1636481183311/work
 spyder-kernels @ file:///C:/ci/spyder-kernels_1634237040526/work
 streamlit==1.8.1
