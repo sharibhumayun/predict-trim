@@ -8,8 +8,10 @@ Created on Sat Apr 16 00:33:40 2022
 import pickle
 import streamlit as st
 import numpy as np
+from urllib.request import urlopen
+import cloudpickle as cp
 
-loaded_model = pickle.load(open('C:/Users/Saba Akhlaq/OneDrive/Desktop/ML model deployment/trained_model.pkl', 'rb'))
+loaded_model = cp.load(urlopen('https://github.com/sharibhumayun/predict-trim/blob/main/trained_model.pkl', 'rb'))
 
 def TRIM_prediction(Input_values):
    
