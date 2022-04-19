@@ -9,6 +9,7 @@ import pickle
 import streamlit as st
 import numpy as np
 from urllib.request import urlopen
+!pip install cloudpickle
 import cloudpickle as cp
 
 loaded_model = cp.load(urlopen('https://github.com/sharibhumayun/predict-trim/blob/main/trained_model.pkl', 'rb'))
