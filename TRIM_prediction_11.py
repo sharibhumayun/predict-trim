@@ -9,7 +9,7 @@ import pickle
 import streamlit as st
 import numpy as np
 
-loaded_model = pickle.load(open('C:/Users/Sharib Shamsi/Desktop/ML model/trained_model.pkl', 'rb'))
+loaded_model = 'C:/Users/Sharib Shamsi/Desktop/ML model/trained_model.pkl'
 
 def TRIM_prediction(Input_values):
    
