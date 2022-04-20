@@ -3,15 +3,16 @@ import streamlit as st
 import numpy as np
 import joblib
 
-path = r'C:\Users\Sharib Shamsi\Desktop\ML model\Completed_model.joblib'
-model = path
+
+loaded_model = pickle.load(open('C:/Users/Sharib Shamsi/Desktop/ML model/trained_model.sav', 'rb'))
+
 
 def TRIM_prediction(Input_values):
    
     Input_values = np.asarray(Input_values)
     Input_values = Input_values.reshape(1,-1)
-    y_pred1 = model.predict(Input_values)
-  
+    y_pred1 = loaded_model.predict(Input_values)
+    y_pred1
     
     
 def main():
@@ -30,16 +31,14 @@ def main():
     Billing_Payment = st.sidebar.slider('Billing & Payment',0,100,50)
     
     
-    y_pred1 = ''
+    y_pred1 = 'TRIM Score'
     
     if st.button('TRIM Index Prediction'):
-        y_pred1= TRIM_prediction(['Mobily','STC','Zain','Communication','Proposition','Sales_Experience','Opt_inout,Network','Customer_Support','Billing_Payment'])
+        y_pred1= TRIM_prediction([Mobily,STC,Zain,Communication,Proposition,Sales_Experience,Opt_inout,Network,Customer_Support,Billing_Payment])
         
     st.success(y_pred1)
         
         
         
 if __name__=='__main__':
-   main()
-    
-       
+    main()
