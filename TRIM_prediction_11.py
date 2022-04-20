@@ -1,10 +1,3 @@
-
-"""
-Created on Sat Apr 16 00:33:40 2022
-
-@author: Saba Akhlaq
-"""
-
 import pickle
 import streamlit as st
 import numpy as np
