@@ -1,6 +1,7 @@
 import pickle
 import streamlit as st
 import numpy as np
+pip install 'h5py==2.10.0' --force-reinstall
 
 model = 'C:/Users/Sharib Shamsi/Desktop/ML model/trained_model.pkl'
 loaded_model = model
