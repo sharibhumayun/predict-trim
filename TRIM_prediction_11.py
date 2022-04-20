@@ -8,7 +8,7 @@ Created on Sat Apr 16 00:33:40 2022
 import pickle
 import streamlit as st
 import numpy as np
-from sklearn.linear_model import LinearRegression
+
 model = 'C:/Users/Sharib Shamsi/Desktop/ML model/trained_model.pkl'
 loaded_model = model
 
