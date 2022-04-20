@@ -10,7 +10,7 @@ def TRIM_prediction(Input_values):
    
     Input_values = np.asarray(Input_values)
     Input_values = Input_values.reshape(1,-1)
-    y_pred1 = model.predict(Input_values)
+    y_pred1 = loaded_model.predict(Input_values)
     y_pred1
     
     
@@ -33,7 +33,7 @@ def main():
     y_pred1 = ''
     
     if st.button('TRIM Index Prediction'):
-        y_pred1= TRIM_prediction([Mobily,STC,Zain,Communication,Proposition,Sales_Experience,Opt_inout,Network,Customer_Support,Billing_Payment])
+        y_pred1= TRIM_prediction(['Mobily','STC','Zain','Communication','Proposition','Sales_Experience','Opt_inout,Network','Customer_Support','Billing_Payment'])
         
     st.success(y_pred1)
         
