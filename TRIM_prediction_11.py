@@ -9,8 +9,8 @@ import pickle
 import streamlit as st
 import numpy as np
 from sklearn.linear_model import LinearRegression
-
-loaded_model = 'C:/Users/Sharib Shamsi/Desktop/ML model/trained_model.pkl'
+model = 'C:/Users/Sharib Shamsi/Desktop/ML model/trained_model.pkl'
+loaded_model = load_model(model)
 
 def TRIM_prediction(Input_values):
    
