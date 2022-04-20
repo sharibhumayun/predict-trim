@@ -1,9 +1,9 @@
 import pickle
 import streamlit as st
 import numpy as np
+import joblib
 
-
-path = r'C:/Users/Sharib Shamsi/Desktop/ML model/trained_model.sav'
+path = r'C:/Users/Sharib Shamsi/Desktop/ML model/Completed_model.joblib'
 model = path
 
 def TRIM_prediction(Input_values):
