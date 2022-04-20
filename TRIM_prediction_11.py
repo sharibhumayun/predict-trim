@@ -3,8 +3,8 @@ import streamlit as st
 import numpy as np
 
 
-model = r'C:/Users/Sharib Shamsi/Desktop/ML model/trained_model.pkl'
-loaded_model = model
+path = r'C:/Users/Sharib Shamsi/Desktop/ML model/trained_model.pkl'
+model = load_model(path)
 
 def TRIM_prediction(Input_values):
    
