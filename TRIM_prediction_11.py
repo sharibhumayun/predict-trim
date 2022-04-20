@@ -4,7 +4,7 @@ import numpy as np
 
 
 path = r'C:/Users/Sharib Shamsi/Desktop/ML model/trained_model.pkl'
-model = load_model('path')
+model = path
 
 def TRIM_prediction(Input_values):
    
