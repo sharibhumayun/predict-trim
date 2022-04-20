@@ -29,7 +29,7 @@ def main():
     Billing_Payment = st.sidebar.slider('Billing & Payment',0,100,50)
     
     
-    
+    y_pred1 ='Score'
     
     if st.button('TRIM Index Prediction'):
         y_pred1= TRIM_prediction([Mobily,STC,Zain,Communication,Proposition,Sales_Experience,Opt_inout,Network,Customer_Support,Billing_Payment])
