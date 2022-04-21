@@ -1,11 +1,26 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+df = pd.read_csv('https://raw.githubusercontent.com/sharibhumayun/predict-trim/main/CSAT%20TRIM%20impact.csv')
+df.drop(['Months'], axis =1, inplace = True)
+x= df.drop(['TRIM_Index'],axis = 1)
+y = df['TRIM_Index']
+
+import sklearn
+from sklearn.model_selection import train_test_split
+x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.2, random_state = 42)
+
+from sklearn.linear_model import LinearRegression
+lr = LinearRegression()
+lr.fit(x_train,y_train)
+
+
 import pickle
 import streamlit as st
 import numpy as np
-import joblib
-import cloudpickle as cp
-from urllib.request import urlopen
 
-loaded_model = cp.load(urlopen('https://github.com/sharibhumayun/predict-trim/blob/main/trained_model.pkl')
 
 def TRIM_prediction(Input_values):
   
