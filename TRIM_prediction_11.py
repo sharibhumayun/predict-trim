@@ -9,7 +9,7 @@ loaded_model = cp.load(urlopen('https://github.com/sharibhumayun/predict-trim/bl
 
 
 def TRIM_prediction(Input_values):
-   
+    Input_values =[1,0,0,50,56,65,57,58,70,59]
     Input_values = np.asarray(Input_values)
     Input_values = Input_values.reshape(1,-1)
     y_pred1 = loaded_model.predict(Input_values)
