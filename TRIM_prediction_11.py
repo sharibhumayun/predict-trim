@@ -2,9 +2,10 @@ import pickle
 import streamlit as st
 import numpy as np
 import joblib
+import cloudpickle as cp
+from urllib.request import urlopen
 
-
-loaded_model = 'https://github.com/sharibhumayun/predict-trim/blob/main/trained_model.sav'
+loaded_model = cp.load(urlopen('https://github.com/sharibhumayun/predict-trim/blob/main/trained_model.sav','rb')
 
 
 def TRIM_prediction(Input_values):
