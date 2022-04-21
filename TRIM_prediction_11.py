@@ -7,7 +7,6 @@ from urllib.request import urlopen
 
 loaded_model = cp.load(urlopen('https://github.com/sharibhumayun/predict-trim/blob/main/trained_model.sav','rb')
 
-
 def TRIM_prediction(Input_values):
   
     Input_values = np.asarray(Input_values)
