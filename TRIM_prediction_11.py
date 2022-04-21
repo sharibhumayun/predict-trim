@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 
-loaded_model = pickle.load(open('C:/Users/Sharib Shamsi/Desktop/ML model/trained_model.sav', 'rb'))
+loaded_model = 'https://github.com/sharibhumayun/predict-trim/blob/main/trained_model.sav'
 
 
 def TRIM_prediction(Input_values):
