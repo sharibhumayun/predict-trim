@@ -5,7 +5,7 @@ import joblib
 import cloudpickle as cp
 from urllib.request import urlopen
 
-loaded_model = cp.load(urlopen('https://github.com/sharibhumayun/predict-trim/blob/main/trained_model.sav','rb')
+loaded_model = cp.load(urlopen('https://github.com/sharibhumayun/predict-trim/blob/main/trained_model.pkl','rb')
 
 def TRIM_prediction(Input_values):
   
