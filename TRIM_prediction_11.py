@@ -16,7 +16,7 @@ from sklearn.linear_model import LinearRegression
 lr = LinearRegression()
 lr.fit(x_train,y_train)
 
-Input_values =[1,0,0,50,56,65,57,58,70,59]
+Input_values =[1,0,0,50,50,50,50,50,50,50]
 Input_values = np.asarray(Input_values)
 Input_values = Input_values.reshape(1,-1)
 y_pred1 = lr.predict(Input_values)
