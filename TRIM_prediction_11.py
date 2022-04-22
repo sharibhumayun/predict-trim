@@ -20,7 +20,6 @@ Input_values = [0,0,0,0,0,0,0,0,0,0]
 Input_values = np.asarray(Input_values)
 Input_values = Input_values.reshape(1,-1)
 y_pred1 = lr.predict(Input_values)
-y_pred1
 
 import pickle
 import streamlit as st
