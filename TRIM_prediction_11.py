@@ -16,6 +16,14 @@ from sklearn.linear_model import LinearRegression
 lr = LinearRegression()
 lr.fit(x_train,y_train)
 
+from sklearn.ensemble import RandomForestRegressor
+rf = RandomForestRegressor()
+rf.fit(x_train, y_train)
+
+Input_values = np.asarray(Input_values)
+Input_values = Input_values.reshape(1,-1)
+y_pred2 = rf.predict(Input_values)
+y_pred2
 
 import pickle
 import streamlit as st
@@ -26,8 +34,8 @@ def TRIM_prediction(Input_values):
   
     Input_values = np.asarray(Input_values)
     Input_values = Input_values.reshape(1,-1)
-    y_pred1 = lr.predict(Input_values)
-    y_pred1
+    y_pred2 = rf.predict(Input_values)
+    y_pred2
     
     
 def main():
@@ -46,12 +54,12 @@ def main():
     Billing_Payment = st.sidebar.slider('Billing & Payment',0,100,50)
     
     
-    y_pred1 = 'TRI*M Index'
+    y_pred2 = 'TRI*M Index'
     
     if st.button('TRIM Index Prediction'):
-        y_pred1= TRIM_prediction([Mobily,STC,Zain,Communication,Proposition,Sales_Experience,Opt_inout,Network,Customer_Support,Billing_Payment])
+        y_pred2= TRIM_prediction([Mobily,STC,Zain,Communication,Proposition,Sales_Experience,Opt_inout,Network,Customer_Support,Billing_Payment])
         
-    st.success(y_pred1)
+    st.success(y_pred2)
         
         
         
