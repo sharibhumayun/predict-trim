@@ -18,7 +18,6 @@ from sklearn.ensemble import RandomForestRegressor
 rf = RandomForestRegressor()
 rf.fit(x_train, y_train)
 
-Input_values =[1,0,0,50,56,65,57,58,70,59]
 Input_values = np.asarray(Input_values)
 Input_values = Input_values.reshape(1,-1)
 y_pred2 = rf.predict(Input_values)
@@ -38,9 +37,9 @@ def TRIM_prediction(Input_values):
     
     
 def main():
+  
     st.title('TRIM Prediction')
-    
-    
+        
     Mobily = st.text_input('Mobily')
     STC = st.text_input('STC')
     Zain = st.text_input('Zain')
