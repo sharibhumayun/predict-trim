@@ -30,7 +30,7 @@ def TRIM_prediction(Input_values):
    
     Input_values = np.asarray(Input_values)
     Input_values = Input_values.reshape(1,-1)
-    y_pred1 = rf.predict(Input_values)
+    y_pred1 = lr.predict(Input_values)
     y_pred1
     
     
