@@ -12,14 +12,14 @@ import sklearn
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.2, random_state = 42)
 
-from sklearn.ensemble import RandomForestRegressor
-rf = RandomForestRegressor()
-rf.fit(x_train, y_train)
+from sklearn.linear_model import LinearRegression
+lr = LinearRegression()
+lr.fit(x_train,y_train)
 
 Input_values = [0,0,0,0,0,0,0,0,0,0]
 Input_values = np.asarray(Input_values)
 Input_values = Input_values.reshape(1,-1)
-y_pred2 = rf.predict(Input_values)
+y_pred1 = lr.predict(Input_values)
 
 import pickle
 import streamlit as st
@@ -30,8 +30,8 @@ def TRIM_prediction(Input_values):
    
     Input_values = np.asarray(Input_values)
     Input_values = Input_values.reshape(1,-1)
-    y_pred2 = rf.predict(Input_values)
-    y_pred2
+    y_pred1 = rf.predict(Input_values)
+    y_pred1
     
     
 def main():
@@ -50,12 +50,12 @@ def main():
     Billing_Payment = st.sidebar.slider('Billing & Payment',0,100,50)
     
     
-    y_pred2 = 'TRIM Score'
+    y_pred1 = 'TRIM Score'
     
     if st.button('TRIM Index Prediction'):
-        y_pred2= TRIM_prediction([Mobily,STC,Zain,Communication,Proposition,Sales_Experience,Opt_inout,Network,Customer_Support,Billing_Payment])
+        y_pred1= TRIM_prediction([Mobily,STC,Zain,Communication,Proposition,Sales_Experience,Opt_inout,Network,Customer_Support,Billing_Payment])
         
-    st.success(y_pred2)
+    st.success(y_pred1)
         
         
         
