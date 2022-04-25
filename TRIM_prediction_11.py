@@ -41,13 +41,13 @@ def main():
     Mobily = st.text_input('Mobily')
     STC = st.text_input('STC')
     Zain = st.text_input('Zain')
-    Communication = st.sidebar.slider('Communication',0,100,50)
-    Proposition = st.sidebar.slider('Proposition',0,100,50)
-    Sales_Experience = st.sidebar.slider('Sales Experience',0,100,50)
-    Opt_inout = st.sidebar.slider('Opt in out',0,100,50)
-    Network = st.sidebar.slider('Network',0,100,50)
-    Customer_Support = st.sidebar.slider('Customer Support',0,100,50)
-    Billing_Payment = st.sidebar.slider('Billing & Payment',0,100,50)
+    Communication = st.sidebar.slider('Communication',0.0,100.0,50.0)
+    Proposition = st.sidebar.slider('Proposition',0.0,100.0,50.0)
+    Sales_Experience = st.sidebar.slider('Sales Experience',0.0,100.0,50.0)
+    Opt_inout = st.sidebar.slider('Opt in out',0.0,100.0,50.0)
+    Network = st.sidebar.slider('Network',0.0,100.0,50.0)
+    Customer_Support = st.sidebar.slider('Customer Support',0.0,100.0,50.0)
+    Billing_Payment = st.sidebar.slider('Billing & Payment',0.0,100.0,50.0)
     
     
     y_pred1 = 'TRIM Score'
