@@ -52,7 +52,7 @@ def main():
     
     y_pred1 = 'TRI*M Score'
     
-    if st.button('TRI*M Index Prediction'):
+    st.button('TRI*M Index Prediction'):
         y_pred1= TRIM_prediction([Mobily,STC,Zain,Communication,Proposition,Sales_Experience,Opt_inout,Network,Customer_Support,Billing_Payment])
         
     st.success(y_pred1)
