@@ -35,7 +35,7 @@ def TRIM_prediction(Input_values):
     
     
 def main():
-    st.title('**TRIM Prediction Model**')
+    st.title('**TRI*M Prediction Model**')
     st.subheader('Input the Service Provider with 1')
     
     Mobily = st.text_input('Mobily')
@@ -50,9 +50,9 @@ def main():
     Billing_Payment = st.sidebar.text_input('Billing & Payment')
     
     
-    y_pred1 = 'TRIM Score'
+    y_pred1 = 'TRI*M Score'
     
-    if st.button('TRIM Index Prediction'):
+    if st.button('TRI*M Index Prediction'):
         y_pred1= TRIM_prediction([Mobily,STC,Zain,Communication,Proposition,Sales_Experience,Opt_inout,Network,Customer_Support,Billing_Payment])
         
     st.success(y_pred1)
