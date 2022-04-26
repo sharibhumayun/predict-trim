@@ -35,7 +35,7 @@ def TRIM_prediction(Input_values):
     
     
 def main():
-    st.title('TRIM Prediction')
+    st.title('**TRIM Prediction Model**')
     
     
     Mobily = st.text_input('Mobily')
