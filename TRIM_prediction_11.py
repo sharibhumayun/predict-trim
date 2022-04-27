@@ -38,6 +38,8 @@ def main():
     st.title('**TRI*M Prediction Model**')
     st.subheader('*Input 1 for your selected Service Provider and 0 for others*')
     
+    st.sidebar.title('Touchpoint CSAT')  
+   
     Mobily = st.text_input('Mobily')
     STC = st.text_input('STC')
     Zain = st.text_input('Zain')
