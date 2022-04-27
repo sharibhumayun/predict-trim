@@ -36,7 +36,7 @@ def TRIM_prediction(Input_values):
     
 def main():
     st.title('**TRI*M Prediction Model**')
-    st.subheader('*Input 1 for your selected Service Provider and 0 for others*')
+    st.subheader('*Input 1 for desired Service Provider and 0 for others*')
     
     st.sidebar.title('Touchpoint CSAT')  
    
