@@ -36,7 +36,7 @@ def TRIM_prediction(Input_values):
     
 def main():
     st.title('**TRI*M Prediction Model**')
-    st.subheader('Input the Service Provider with 1')
+    st.subheader('**Input 1 for Service Provider and 0 for others**')
     
     Mobily = st.text_input('Mobily')
     STC = st.text_input('STC')
